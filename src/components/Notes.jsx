@@ -10,6 +10,7 @@ export const Notes = () => {
     const addNote = (input) => {
         if (input === "") return;
         setNotes([...notes, input]);
+        inputRef.current.value = "";
     };
 
     const removeNote = (i) => setNotes(notes.filter((_, index) => index !== i));
@@ -17,15 +18,8 @@ export const Notes = () => {
     return (
         <div id="all-notes-container">
             <div id="add-note">
-                <input ref={inputRef} type="text" placeholder="Add note..." aria-label="Add Note" />
-                <button
-                    onClick={() => {
-                        addNote(inputRef.current.value);
-                        inputRef.current.value = "";
-                    }}
-                >
-                    Add Note
-                </button>
+                <input ref={inputRef} type="text" placeholder="Add note..." aria-label="Add Note" onKeyDown={(event) => event.key === "Enter" && addNote(inputRef.current.value)} />
+                <button onClick={() => addNote(inputRef.current.value)}>Add Note</button>
             </div>
 
             {notes.map((note, i) => {
