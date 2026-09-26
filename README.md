@@ -2,13 +2,13 @@
   
   # Notes
 
-  <img src="https://deploy-badge.vercel.app/vercel/app?style=for-the-badge" alt="Vercel Deploy"><br>
+  <img src="https://deploy-badge.vercel.app/vercel/alex-m-notes?style=for-the-badge" alt="Vercel Deploy"><br>
   <img src="https://img.shields.io/badge/MADE%20WITH-REACT-61DAFB?style=for-the-badge&logo=react" alt="Made with React">
   <img src="https://img.shields.io/github/languages/top/Alex-M-2013/Notes?style=for-the-badge&logo=javascript" alt="Top Language">
 
   A simple web Note-taking app made with React. <br> 
 
-  __Link:__ placeholder
+  __Link:__ https://alex-m-notes.vercel.app/
 </div>
 
 ## Features 
