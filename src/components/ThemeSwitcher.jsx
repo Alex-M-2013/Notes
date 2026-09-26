@@ -25,7 +25,7 @@ export const ThemeSwitcher = () => {
 
     return (
         <button id="theme-switcher" onClick={switchTheme}>
-            <img id="theme-icon" src={`/assets/icons/${currentIcon}.svg`} alt={capitalise(currentIcon)} />
+            <img id="theme-icon" src={`/icons/${currentIcon}.svg`} alt={capitalise(currentIcon)} />
         </button>
     );
 };
